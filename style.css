@@ -49,13 +49,12 @@ body {
   background-color: #161b33;
   color: #f1dac4;
   flex: 1;
-  padding: 20px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100%;
-  text-align: center;
+  height: 100vh;
 }
 .nome {
   text-align: center;
@@ -137,6 +136,7 @@ body {
 
   .content {
     width: 100%;
+    height: 100%;
   }
 
   .nome span {
@@ -154,8 +154,4 @@ body {
 .linguagem {
   border: #505faa solid 2px;
   text-align: center;
-}
-
-.bloco {
-  flex-direction: column;
 }
