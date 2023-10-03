@@ -11,7 +11,8 @@ a {
 }
 
 a:hover {
-  color: #eef4ed;
+  text-shadow: 0 0 10px #47fd66;
+  color: #47fd66;
 }
 .link1 a:visited {
   color: #ffffff;
@@ -54,12 +55,16 @@ body {
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+  text-align: center;
 }
-
+.nome {
+  text-align: center;
+  margin: 2vh;
+}
 .nome span {
   font-size: 48px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 .end span {
@@ -145,4 +150,12 @@ body {
 }
 #ui {
   color: #161b33;
+}
+.linguagem {
+  border: #505faa solid 2px;
+  text-align: center;
+}
+
+.bloco {
+  flex-direction: column;
 }
