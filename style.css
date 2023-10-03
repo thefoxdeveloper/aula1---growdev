@@ -1,4 +1,3 @@
-/* Base styles for larger screens */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -49,12 +48,13 @@ body {
   background-color: #161b33;
   color: #f1dac4;
   flex: 1;
-  padding: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
+
+  height: 100%;
+  width: 90%;
 }
 .nome {
   text-align: center;
@@ -122,23 +122,24 @@ body {
   color: #47fd66;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+
+    height: max-content;
   }
 
   .menu {
-    width: 100%;
   }
 
   .content {
     width: 100%;
-    height: 100%;
   }
-
+  .nome {
+    text-align: center;
+  }
   .nome span {
     font-size: 36px;
   }
@@ -148,10 +149,9 @@ body {
     height: 150px;
   }
 }
-#ui {
-  color: #161b33;
-}
+
 .linguagem {
-  border: #505faa solid 2px;
+  border: #505faa dotted 2px;
+
   text-align: center;
 }
