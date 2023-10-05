@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minha Página de Aprendizado HTML</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+
+      body {
+        background-image: url("./transferir.jpeg");
+        background-size: contain;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+      }
+
+      @-webkit-keyframes slidein {
+        from {
+          background-position: top;
+          background-size: 3000px;
+        }
+        to {
+          background-position: -100px 0px;
+          background-size: 2750px;
+        }
+      }
+
+      @keyframes slidein {
+        from {
+          background-position: top;
+          background-size: 3000px;
+        }
+        to {
+          background-position: -100px 0px;
+          background-size: 2750px;
+        }
+      }
+      * {
+        font-family: "Source Code Pro", monospace;
+        font-weight: 600;
+        color: azure;
+      }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        flex-direction: column;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(75, 75, 250, 0.3);
+        border-radius: 3px;
+      }
+      .center h1,
+      h2 {
+        text-align: center;
+        color: white;
+        font-family: "Source Code Pro", monospace;
+        text-transform: uppercase;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 70%;
+      }
+
+      th {
+        background-color: #5a5a5a;
+        text-align: left;
+        padding: 10px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #0b7de7;
+      }
+
+      td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #dddddd;
+      }
+
+      tr:hover {
+        background-color: #14045c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1 style="color: rgb(106, 245, 136)">Aprendendo HTML</h1>
+      <h2>Lista Ordenada:</h2>
+      <ol>
+        <li><strong>HTML</strong>: Linguagem de Marcação de Hipertexto</li>
+        <li>
+          <strong>Tags</strong>: Elementos utilizados para estruturar o conteúdo
+          HTML
+        </li>
+        <li>
+          <strong>Elementos</strong>: Partes individuais de uma página HTML
+        </li>
+      </ol>
+
+      <h2>Lista Não Ordenada:</h2>
+      <ul>
+        <li>
+          <strong>Web Browser</strong>: Software usado para visualizar páginas
+          web
+        </li>
+        <li>
+          <strong>Hyperlink</strong>: Um link que permite a navegação entre
+          páginas
+        </li>
+        <li><strong>HTML5</strong>: A versão mais recente do HTML</li>
+      </ul>
+
+      <h2>Lista de Descrição:</h2>
+      <dl>
+        <dt><strong>HTML</strong></dt>
+        <dd>Linguagem de marcação usada para criar páginas web.</dd>
+
+        <dt><strong>Tag</strong></dt>
+        <dd>
+          Um elemento usado para marcar partes específicas do conteúdo HTML.
+        </dd>
+
+        <dt><strong>Elemento</strong></dt>
+        <dd>
+          Uma parte individual de uma página web, como um cabeçalho ou um
+          parágrafo.
+        </dd>
+      </dl>
+
+      <h1 style="color: rgb(106, 245, 136)">Calendário de Outubro de 2023</h1>
+      <table>
+        <tr>
+          <th>Domingo</th>
+          <th>Segunda-feira</th>
+          <th>Terça-feira</th>
+          <th>Quarta-feira</th>
+          <th>Quinta-feira</th>
+          <th>Sexta-feira</th>
+          <th>Sábado</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
